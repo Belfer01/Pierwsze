@@ -1,37 +1,50 @@
-#! /usr/bin/env python2
-# -*- coding: utf-8 -*-
+x=20
+y=10
+input("podaj watosc ")
+if x>y:
+    print("wartossc wieksza")
+elif x<y:
+    print ("wartpsc mniejsza")
+elif x == 10:
+    print ("wartpsc równa")
+pass
 
-import pygame
-import sys
-from pygame.locals import *
-
-# inicjacja modułu pygame
-pygame.init()
-
-# szerokość i wysokość okna gry
-OKNOGRY_SZER = 800
-OKNOGRY_WYS = 400
-
-LT_BLUE = (230, 255, 255,)
-
-
-oknogry = pygame.display.set_mode((OKNOGRY_SZER, OKNOGRY_WYS), 0, 32)
-# tytuł okna gry
-pygame.display.set_caption('Prosty Pong')
+i= 0
+#petla
+while i< 5:
+    print(i)
+    if i>=4:
 
 
-while True:
-    # obsługa zdarzeń generowanych przez gracza
-    for event in pygame.event.get():
-        # przechwyć zamknięcie okna
-        if event.type == QUIT:
-            pygame.quit()
-            sys.exit()
-
-    # rysowanie obiektów
-    oknogry.fill(LT_BLUE)  # kolor okna gry
+       print("mkonies")
 
 
-    pygame.display.update()
+# program kuwa
 
-# KONIEC
+
+from random import  randint
+los = randint(1,5)
+odp = -1
+i= 0
+
+while odp != los:
+    i += 1
+    odp = int(input("podaj wartosc "))
+    if odp > los:
+        while odp >= los:
+            print("niestiety hjij zad mało")
+
+    elif odp < los:
+        while los > odp:
+            print("niestiety hjij zad duzo")
+
+print("Brawo klurw za ", i, "razme")
+
+
+#222222
+
+krotka_wartosc =( 2,4,5,6)
+print(krotka_wartosc)
+
+print("wycinak")
+print(krotka_wartosc[1::4])
