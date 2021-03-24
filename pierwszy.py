@@ -11,15 +11,15 @@ pygame.init()
 # szerokość i wysokość okna gry
 OKNOGRY_SZER = 800
 OKNOGRY_WYS = 400
-# kolor okna gry, składowe RGB zapisane w tupli
+
 LT_BLUE = (230, 255, 255,)
 
-# powierzchnia do rysowania, czyli inicjacja pola gry
+
 oknogry = pygame.display.set_mode((OKNOGRY_SZER, OKNOGRY_WYS), 0, 32)
 # tytuł okna gry
 pygame.display.set_caption('Prosty Pong')
 
-# pętla główna programu
+
 while True:
     # obsługa zdarzeń generowanych przez gracza
     for event in pygame.event.get():
